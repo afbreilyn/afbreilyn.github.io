@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>afb writes</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,6 +31,7 @@
         html {
             scroll-behavior: smooth;
         }
+
         a {
             cursor: pointer;
         }
@@ -50,22 +52,39 @@
                 <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl">
                     and i write things:
                 </p>
-                <div class="space-x-4">
-            <a href="https://soundcloud.com/aaronfosterbreilyn"
-               class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
-                music
-            </a>
-            <a href="https://github.com/afbreilyn/"
-               class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg hover:border-purple-600 hover:text-purple-600 transition">
-                code
-            </a>
-            <span class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg text-gray-400 cursor-not-allowed">
-                words.... coming soon
-            </span>
+                <div class="space-x-4 hidden sm:block">
+                    <a href="https://soundcloud.com/aaronfosterbreilyn"
+                       class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+                        music
+                    </a>
+                    <a href="https://github.com/afbreilyn/"
+                       class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg hover:border-purple-600 hover:text-purple-600 transition ml-12"
+                       style="margin-left: .5rem;">
+                        code
+                    </a>
+                    <span class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg text-gray-400 cursor-not-allowed"
+                          style="margin-left: .5rem;">
+                        words (soonish)
+                    </span>
                 </div>
             </div>
             <div class="flex-shrink-0">
                 <img id="profile-img" src="images/pixels.png" alt="Profile" class="w-32 sm:w-48 h-auto rounded-lg">
+            </div>
+        </div>
+        <div class="flex gap-12 sm:hidden">
+            <div class="space-x-4">
+                <a href="https://soundcloud.com/aaronfosterbreilyn"
+                   class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+                    music
+                </a>
+                <a href="https://github.com/afbreilyn/"
+                   class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg hover:border-purple-600 hover:text-purple-600 transition">
+                    code
+                </a>
+                <span class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg text-gray-400 cursor-not-allowed">
+                words (soonish)
+            </span>
             </div>
         </div>
     </div>
