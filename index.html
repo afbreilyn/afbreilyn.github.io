@@ -38,16 +38,18 @@
 
 <section id="home" class="pt-32 pb-20 px-4">
     <div class="max-w-5xl mx-auto">
-        <h1 class="text-5xl sm:text-6xl font-bold mb-6">
-            good morning — i'm <span class="text-purple-600">afb</span>
-        </h1>
-        <p class="text-3xl sm:text-3xl text-gray-600 mb-8 max-w-2xl">
-            also known as <span class="text-black">aaron foster breilyn</span>
-        </p>
-        <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl">
-            and i write things:
-        </p>
-        <div class="space-x-4">
+        <div class="flex gap-8">
+            <div class="flex-1">
+                <h1 class="text-5xl sm:text-6xl font-bold mb-6">
+                    good morning — i'm <span class="text-purple-600">afb</span>
+                </h1>
+                <p class="text-3xl sm:text-3xl text-gray-600 mb-8 max-w-2xl">
+                    also known as <span class="text-black">aaron foster breilyn</span>
+                </p>
+                <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl">
+                    and i write things:
+                </p>
+                <div class="space-x-4">
             <a href="https://soundcloud.com/aaronfosterbreilyn"
                class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
                 music
@@ -59,9 +61,22 @@
             <span class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg text-gray-400 cursor-not-allowed">
                 words.... coming soon
             </span>
+                </div>
+            </div>
+            <div class="flex-shrink-0">
+                <img id="profile-img" src="images/pixels.png" alt="Profile" class="w-32 sm:w-48 h-auto rounded-lg">
+            </div>
         </div>
     </div>
 </section>
+
+<script>
+    const profileImg = document.getElementById('profile-img');
+    const randomValue = Math.random();
+    if (randomValue < 0.1) {
+        profileImg.src = 'images/accurate.png';
+    }
+</script>
 
 </body>
 </html>
