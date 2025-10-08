@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        purple: {
+                            600: '#b88ae4',
+                            700: '#a194df',
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        a {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-mono">
+
+<section id="home" class="pt-32 pb-20 px-4">
+    <div class="max-w-5xl mx-auto">
+        <h1 class="text-5xl sm:text-6xl font-bold mb-6">
+            good morning — i'm <span class="text-purple-600">afb</span>
+        </h1>
+        <p class="text-3xl sm:text-3xl text-gray-600 mb-8 max-w-2xl">
+            also known as <span class="text-black">aaron foster breilyn</span>
+        </p>
+        <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl">
+            and i write things:
+        </p>
+        <div class="space-x-4">
+            <a href="https://soundcloud.com/aaronfosterbreilyn"
+               class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+                music
+            </a>
+            <a href="https://github.com/afbreilyn/"
+               class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg hover:border-purple-600 hover:text-purple-600 transition">
+                code
+            </a>
+            <span class="inline-block border-2 border-gray-300 px-6 py-3 rounded-lg text-gray-400 cursor-not-allowed">
+                words.... coming soon
+            </span>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
